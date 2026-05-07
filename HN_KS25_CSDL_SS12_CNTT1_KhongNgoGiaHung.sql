@@ -128,7 +128,7 @@ BEGIN
     
     SELECT s.StudentID , s.FullName, HighestScore
 	FROM Enrollment e
-    JOIN StudentID s
+    JOIN Student s
     ON e.StudentID = s.StudentID
     WHERE score = HighestScore;
 END
